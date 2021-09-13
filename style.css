@@ -61,6 +61,40 @@ body {
 
 .hr, .mn, .sc {
     display: flex;
-    align-content: center;
     justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.hr::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background-color: #ff105e;
+    border-radius: 10px;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+}
+
+.mn::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    background-color: #fff;
+    border-radius: 10px;
+    z-index: 11;
+    border-radius: 6px 6px 0 0;
+}
+
+.sc::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 10px;
+    z-index: 12;
+    border-radius: 6px 6px 0 0;
 }
